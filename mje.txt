@@ -1,0 +1,54 @@
+・<GameMaster>
+	・<Round>
+		・<Hand>
+	・<Player>x4
+
+・<GameMaster>
++ Rule
++ RoundNo		0=東１局 / 1=東２局 / 2=東３局 / 3=東４局 / 4=南１局 / 8=西１局
++ HombaNo		0=０本場 / 1=１本場
++ PoolPoint
++ RandomSeed
++ Option.Chombo
+m Start
+m Server
+
+・<Round>
++ Wind			MJ::TON=東場 / MJ::NAN=南場 / MJ::SHA=西場 / MJ::PEI=北場
++ PhaseNo		1=１順目 / 2=２順目
++ Turn			MJ::TON=東家 / MJ::NAN=南家 / MJ::SHA=西家 / MJ::PEI=北家 / MJ::NOBODY=誰でもない
++ Dora[]
++ Yama
++ Shibari		t=縛りアリ
++ RinshanNow	t=カン直後
++ RinshanLeft
++ Haitei		t=海底・河底
++ DoraPending
++ Naki.Action
++ Naki.Pid
++ Naki.OpponentPid
++ Naki.Pai
++ Naki.PaiArg[]
++ Kawa[4]
++ Winner[]
+
+・<Hand>
++ Wind			MJ::TON=東家 / MJ::NAN=南家 / MJ::SHA=西家 / MJ::PEI=北家
++ Oya			t=親
++ Hand[]
++ Shanten		-1=アガリ / 0=聴牌 / 1=一向聴
++ Furiten		t=フリテン
++ FuritenNow	t=同順
++ Reach			t=リーチ
++ ReachNow		t=一発リーチ
++ Agari			t=アガリ
+
+・<Player>
++ Name
++ Point
++ Chip
++ Option.Speed
++ Option.Skip
+m SendEvent
+
+[eof]
